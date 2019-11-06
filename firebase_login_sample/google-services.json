@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "507121315687",
+    "firebase_url": "https://emelleme-friendlywebchat.firebaseio.com",
+    "project_id": "emelleme-friendlywebchat",
+    "storage_bucket": "emelleme-friendlywebchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507121315687:android:af4a013becb025634b89c2",
+        "android_client_info": {
+          "package_name": "com.example.firebase_login_sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507121315687-md305dmplb9dtsv1e7qhkai3755pu6o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANbT_vp-2sC_OFVP6NF61wucfHlpPe5l8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507121315687-md305dmplb9dtsv1e7qhkai3755pu6o6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
