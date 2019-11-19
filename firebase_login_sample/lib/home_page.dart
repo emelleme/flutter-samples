@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
 
       body: new Container(
         child: new Center(
-          child: new Text('Welcome Emelleme Team :)', style:new TextStyle(fontSize:32.0)),
+          child: new Text('Welcome Emelleme Team :) ', style:new TextStyle(fontSize:32.0)),
         ),
       ),
     );
