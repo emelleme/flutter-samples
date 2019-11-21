@@ -1,3 +1,5 @@
+import 'package:firebase_login_sample/login.dart';
+import 'package:firebase_login_sample/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'auth.dart'
 ;
@@ -26,7 +28,10 @@ class HomePage extends StatelessWidget {
         actions: <Widget>[
           new FlatButton(
             child: new Text('Logout', style: new TextStyle(fontSize:17.0, color: Colors.white)),
-            onPressed: _signOut,
+             onPressed: () {
+                  signOutGoogle();
+                  Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) {return LoginPage();}), ModalRoute.withName('/'));
+                },
           )
         ],
       ),

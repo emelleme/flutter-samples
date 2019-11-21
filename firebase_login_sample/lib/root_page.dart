@@ -55,9 +55,9 @@ void _signedOut() {
         onSignedIn: _signedIn ,
         );
       case AuthStatus.signedIn:
-        return new HomePage(
-          auth: widget.auth,
-          onSignedOut: _signedOut,
+          return new HomePage(
+            auth: widget.auth,
+            onSignedOut: _signedOut,
         );
     }
     return new LoginPage(auth: widget.auth);
