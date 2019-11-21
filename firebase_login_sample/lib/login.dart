@@ -48,12 +48,12 @@ class _LoginPageState extends State<LoginPage> {
       String userId = await widget.auth.signInWithEmailAndPassword(_email, _password);
   // AuthResult result = await FirebaseAuth.instance.signInWithEmailAndPassword(email: _email, password: _password);
   // FirebaseUser user = result.user;
-        print('Signed in ${userId}');
+        print('Signed in $userId');
 
      
       } else { 
         String userId = await widget.auth.createUserWithEmailAndPassword(_email, _password);
-          print('Registered user: ${userId}');
+          print('Registered user: $userId');
 
       }
          widget.onSignedIn();
