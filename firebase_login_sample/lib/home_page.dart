@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'auth.dart'
+import 'auth.dart';
+import 'package:firebase_login_sample/widgets/side_menu.dart';
 ;
 
 class HomePage extends StatelessWidget {
@@ -30,7 +31,7 @@ class HomePage extends StatelessWidget {
           )
         ],
       ),
-
+      drawer: NavDrawer(),
       body: new Container(
         child: new Center(
           child: new Text('Welcome Emelleme Team :) ', style:new TextStyle(fontSize:32.0)),
