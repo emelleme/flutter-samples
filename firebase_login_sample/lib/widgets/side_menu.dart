@@ -12,9 +12,9 @@ class NavDrawer extends StatelessWidget {
               'Side menu',
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),
-            decoration: BoxDecoration(
+             decoration: BoxDecoration(
                 color: Colors.green,
-                
+              ),
           ),
           ListTile(
             leading: Icon(Icons.input),

@@ -1,8 +1,9 @@
 import 'package:firebase_login_sample/login.dart';
 import 'package:firebase_login_sample/sign_in.dart';
-import 'package:flutter/material.dart';
-import 'auth.dart';
 import 'package:firebase_login_sample/widgets/side_menu.dart';
+import 'package:flutter/material.dart';
+import 'package:sliding_up_panel/sliding_up_panel.dart';
+import 'auth.dart'
 ;
 
 class HomePage extends StatelessWidget {
@@ -36,12 +37,52 @@ class HomePage extends StatelessWidget {
           )
         ],
       ),
-      drawer: NavDrawer(),
-      body: new Container(
-        child: new Center(
-          child: new Text('Welcome Emelleme Team :) ', style:new TextStyle(fontSize:32.0)),
-        ),
+
+drawer: NavDrawer(),
+   body: SlidingUpPanel(
+      renderPanelSheet: false,
+      panel: _floatingPanel(),
+      collapsed: _floatingCollapsed(),
+      body: Center(
+        child: Text("Map will go here"),
       ),
+    ),
     );
   }
+}
+
+
+Widget _floatingCollapsed(){
+  return Container(
+    decoration: BoxDecoration(
+      color: Colors.blue,
+      borderRadius: BorderRadius.only(topLeft: Radius.circular(24.0), topRight: Radius.circular(24.0)),
+    ),
+    margin: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 0.0),
+    child: Center(
+      child: Text(
+        "Find a Doctor",
+        style: TextStyle(color: Colors.white),
+      ),
+    ),
+  );
+}
+
+Widget _floatingPanel(){
+  return Container(
+    decoration: BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.all(Radius.circular(24.0)),
+      boxShadow: [
+        BoxShadow(
+          blurRadius: 20.0,
+          color: Colors.grey,
+        ),
+      ]
+    ),
+    margin: const EdgeInsets.all(24.0),
+    child: Center(
+      child: Text("This is the SlidingUpPanel when open"),
+    ),
+  );
 }
